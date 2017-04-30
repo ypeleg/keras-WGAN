@@ -17,7 +17,7 @@ BATCH_SIZE = 64
 TRAINING_RATIO = 5  
 GRADIENT_PENALTY_WEIGHT = 10  
 
-#this is stolen from the keras comunity contributors repo
+#these losses are from the keras comunity contributors repo
 def wasserstein_loss(y_true, y_pred):
     return K.mean(y_true * y_pred)
 
